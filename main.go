@@ -1,4 +1,6 @@
 /*
+Display weather information from Metservice.
+
 Copyright © 2021 Dakota Walsh <kota@nilsu.org>
 
 This program is free software: you can redistribute it and/or modify
