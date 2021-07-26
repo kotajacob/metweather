@@ -11,21 +11,15 @@ import (
 // forecastCmd represents the forecast command
 var forecastCmd = &cobra.Command{
 	Use:   "forecast",
-	Short: "A brief description of your command",
-	Long: `A longer description that spans multiple lines and likely contains examples
-and usage of using your command. For example:
-
-Cobra is a CLI library for Go that empowers applications.
-This application is a tool to generate the needed files
-to quickly create a Cobra application.`,
-	Run: Forecast,
+	Short: "Displays weather predictions for the current day or next serveral days",
+	Run:   forecast,
 }
 
 func init() {
 	rootCmd.AddCommand(forecastCmd)
 }
 
-func Forecast(cmd *cobra.Command, args []string) {
+func forecast(cmd *cobra.Command, args []string) {
 	client := metservice.NewClient()
 	ctx := context.Background()
 
