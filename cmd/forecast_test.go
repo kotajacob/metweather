@@ -23,7 +23,7 @@ func TestForecast(t *testing.T) {
 
 	ctx := context.Background()
 	out = new(bytes.Buffer) // captured output
-	forecastWeekly(client, ctx)
+	forecastWeekly(client, ctx, "Dunedin")
 	got := out.(*bytes.Buffer).String()
 	want := `2021-7-16 Partly cloudy 7-13c
 2021-7-17 Showers 8-11c
