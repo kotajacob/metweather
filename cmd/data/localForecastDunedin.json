@@ -1,0 +1,499 @@
+{
+	"_usage": "This data is restricted and may only be used with explicit permission from MetService NZ. Contact dataenquiries@metservice.com",
+	"days": [
+		{
+			"date": "16 Jul",
+			"dateISO": "2021-07-16T12:00:00+12:00",
+			"dow": "Friday",
+			"dowTLA": "Fri",
+			"forecast": "Mostly cloudy. A few spots of rain possible again this evening. Northeasterlies, strong about the coast, easing this evening.",
+			"forecastWord": "Partly cloudy",
+			"issuedAt": "9:09am 16 Jul",
+			"issuedAtISO": "2021-07-16T09:09:00+12:00",
+			"issuedAtRaw": 1626383340000,
+			"max": "13",
+			"min": "7",
+			"partDayData": {
+				"afternoon": {
+					"forecastWord": "Cloudy",
+					"iconType": "DAY"
+				},
+				"evening": {
+					"forecastWord": "Cloudy",
+					"iconType": "NIGHT"
+				},
+				"morning": {
+					"forecastWord": "Partly cloudy",
+					"iconType": "DAY"
+				},
+				"overnight": {
+					"forecastWord": "Showers",
+					"iconType": "NIGHT"
+				}
+			},
+			"riseSet": {
+				"day": "16 July 2021",
+				"dayISO": "2021-07-16T00:00:00+12:00",
+				"firstLight": "7:39am",
+				"firstLightISO": "2021-07-16T07:39:00+12:00",
+				"id": "loc1036728",
+				"lastLight": "5:50pm",
+				"lastLightISO": "2021-07-16T17:50:00+12:00",
+				"location": "Dunedin",
+				"moonRise": "11:37am",
+				"moonRiseISO": "2021-07-16T11:37:00+12:00",
+				"moonSet": "11:55pm",
+				"moonSetISO": "2021-07-16T23:55:00+12:00",
+				"sunRise": "8:12am",
+				"sunRiseHour": 8,
+				"sunRiseISO": "2021-07-16T08:12:00+12:00",
+				"sunSet": "5:16pm",
+				"sunSetHour": 17,
+				"sunSetISO": "2021-07-16T17:16:00+12:00"
+			},
+			"source": "IPS",
+			"sourceTemps": "IPS"
+		},
+		{
+			"date": "17 Jul",
+			"dateISO": "2021-07-17T12:00:00+12:00",
+			"dow": "Saturday",
+			"dowTLA": "Sat",
+			"forecast": "Low cloud. Occasional rain developing early morning. Winds mainly light.",
+			"forecastWord": "Showers",
+			"issuedAt": "11:13am 16 Jul",
+			"issuedAtISO": "2021-07-16T11:13:00+12:00",
+			"issuedAtRaw": 1626390780000,
+			"max": "11",
+			"min": "8",
+			"partDayData": {
+				"afternoon": {
+					"forecastWord": "Showers",
+					"iconType": "DAY"
+				},
+				"evening": {
+					"forecastWord": "Showers",
+					"iconType": "NIGHT"
+				},
+				"morning": {
+					"forecastWord": "Showers",
+					"iconType": "DAY"
+				},
+				"overnight": {
+					"forecastWord": "Few showers",
+					"iconType": "NIGHT"
+				}
+			},
+			"riseSet": {
+				"day": "17 July 2021",
+				"dayISO": "2021-07-17T00:00:00+12:00",
+				"firstLight": "7:39am",
+				"firstLightISO": "2021-07-17T07:39:00+12:00",
+				"id": "loc1036728",
+				"lastLight": "5:50pm",
+				"lastLightISO": "2021-07-17T17:50:00+12:00",
+				"location": "Dunedin",
+				"moonRise": "11:59am",
+				"moonRiseISO": "2021-07-17T11:59:00+12:00",
+				"sunRise": "8:12am",
+				"sunRiseHour": 8,
+				"sunRiseISO": "2021-07-17T08:12:00+12:00",
+				"sunSet": "5:17pm",
+				"sunSetHour": 17,
+				"sunSetISO": "2021-07-17T17:17:00+12:00"
+			},
+			"source": "IPS",
+			"sourceTemps": "IPS"
+		},
+		{
+			"date": "18 Jul",
+			"dateISO": "2021-07-18T12:00:00+12:00",
+			"dow": "Sunday",
+			"dowTLA": "Sun",
+			"forecast": "Cloudy with a few showers. Southwesterlies turning southeasterly in the afternoon, dying out later.",
+			"forecastWord": "Few showers",
+			"issuedAt": "11:14am 16 Jul",
+			"issuedAtISO": "2021-07-16T11:14:00+12:00",
+			"issuedAtRaw": 1626390840000,
+			"max": "10",
+			"min": "7",
+			"partDayData": {
+				"afternoon": {
+					"forecastWord": "Showers",
+					"iconType": "DAY"
+				},
+				"evening": {
+					"forecastWord": "Showers",
+					"iconType": "NIGHT"
+				},
+				"morning": {
+					"forecastWord": "Few showers",
+					"iconType": "DAY"
+				},
+				"overnight": {
+					"forecastWord": "Cloudy",
+					"iconType": "NIGHT"
+				}
+			},
+			"riseSet": {
+				"day": "18 July 2021",
+				"dayISO": "2021-07-18T00:00:00+12:00",
+				"firstLight": "7:38am",
+				"firstLightISO": "2021-07-18T07:38:00+12:00",
+				"id": "loc1036728",
+				"lastLight": "5:51pm",
+				"lastLightISO": "2021-07-18T17:51:00+12:00",
+				"location": "Dunedin",
+				"moonRise": "12:21pm",
+				"moonRiseISO": "2021-07-18T12:21:00+12:00",
+				"moonSet": "1:10am",
+				"moonSetISO": "2021-07-18T01:10:00+12:00",
+				"sunRise": "8:11am",
+				"sunRiseHour": 8,
+				"sunRiseISO": "2021-07-18T08:11:00+12:00",
+				"sunSet": "5:18pm",
+				"sunSetHour": 17,
+				"sunSetISO": "2021-07-18T17:18:00+12:00"
+			},
+			"source": "IPS",
+			"sourceTemps": "IPS"
+		},
+		{
+			"date": "19 Jul",
+			"dateISO": "2021-07-19T12:00:00+12:00",
+			"dow": "Monday",
+			"dowTLA": "Mon",
+			"forecast": "Cloudy, with a few showers. Light winds.",
+			"forecastWord": "Showers",
+			"issuedAt": "11:14am 16 Jul",
+			"issuedAtISO": "2021-07-16T11:14:00+12:00",
+			"issuedAtRaw": 1626390840000,
+			"max": "11",
+			"min": "4",
+			"riseSet": {
+				"day": "19 July 2021",
+				"dayISO": "2021-07-19T00:00:00+12:00",
+				"firstLight": "7:37am",
+				"firstLightISO": "2021-07-19T07:37:00+12:00",
+				"id": "loc1036728",
+				"lastLight": "5:52pm",
+				"lastLightISO": "2021-07-19T17:52:00+12:00",
+				"location": "Dunedin",
+				"moonRise": "12:48pm",
+				"moonRiseISO": "2021-07-19T12:48:00+12:00",
+				"moonSet": "2:27am",
+				"moonSetISO": "2021-07-19T02:27:00+12:00",
+				"sunRise": "8:10am",
+				"sunRiseHour": 8,
+				"sunRiseISO": "2021-07-19T08:10:00+12:00",
+				"sunSet": "5:19pm",
+				"sunSetHour": 17,
+				"sunSetISO": "2021-07-19T17:19:00+12:00"
+			},
+			"source": "IPS",
+			"sourceTemps": "IPS"
+		},
+		{
+			"date": "20 Jul",
+			"dateISO": "2021-07-20T12:00:00+12:00",
+			"dow": "Tuesday",
+			"dowTLA": "Tue",
+			"forecast": "Morning cloud then fine. Northerlies developing.",
+			"forecastWord": "Partly cloudy",
+			"issuedAt": "11:14am 16 Jul",
+			"issuedAtISO": "2021-07-16T11:14:00+12:00",
+			"issuedAtRaw": 1626390840000,
+			"max": "11",
+			"min": "6",
+			"riseSet": {
+				"day": "20 July 2021",
+				"dayISO": "2021-07-20T00:00:00+12:00",
+				"firstLight": "7:36am",
+				"firstLightISO": "2021-07-20T07:36:00+12:00",
+				"id": "loc1036728",
+				"lastLight": "5:53pm",
+				"lastLightISO": "2021-07-20T17:53:00+12:00",
+				"location": "Dunedin",
+				"moonRise": "1:20pm",
+				"moonRiseISO": "2021-07-20T13:20:00+12:00",
+				"moonSet": "3:47am",
+				"moonSetISO": "2021-07-20T03:47:00+12:00",
+				"sunRise": "8:09am",
+				"sunRiseHour": 8,
+				"sunRiseISO": "2021-07-20T08:09:00+12:00",
+				"sunSet": "5:20pm",
+				"sunSetHour": 17,
+				"sunSetISO": "2021-07-20T17:20:00+12:00"
+			},
+			"source": "IPS",
+			"sourceTemps": "IPS"
+		},
+		{
+			"date": "21 Jul",
+			"dateISO": "2021-07-21T12:00:00+12:00",
+			"dow": "Wednesday",
+			"dowTLA": "Wed",
+			"forecast": "Partly cloudy. Northeasterlies.",
+			"forecastWord": "Partly cloudy",
+			"issuedAt": "11:30am 16 Jul",
+			"issuedAtISO": "2021-07-16T11:30:00+12:00",
+			"issuedAtRaw": 1626391800000,
+			"max": "12",
+			"min": "6",
+			"riseSet": {
+				"day": "21 July 2021",
+				"dayISO": "2021-07-21T00:00:00+12:00",
+				"firstLight": "7:36am",
+				"firstLightISO": "2021-07-21T07:36:00+12:00",
+				"id": "loc1036728",
+				"lastLight": "5:54pm",
+				"lastLightISO": "2021-07-21T17:54:00+12:00",
+				"location": "Dunedin",
+				"moonRise": "2:00pm",
+				"moonRiseISO": "2021-07-21T14:00:00+12:00",
+				"moonSet": "5:07am",
+				"moonSetISO": "2021-07-21T05:07:00+12:00",
+				"sunRise": "8:08am",
+				"sunRiseHour": 8,
+				"sunRiseISO": "2021-07-21T08:08:00+12:00",
+				"sunSet": "5:21pm",
+				"sunSetHour": 17,
+				"sunSetISO": "2021-07-21T17:21:00+12:00"
+			},
+			"source": "eWasp Urban",
+			"sourceTemps": "IPS"
+		},
+		{
+			"date": "22 Jul",
+			"dateISO": "2021-07-22T12:00:00+12:00",
+			"dow": "Thursday",
+			"dowTLA": "Thu",
+			"forecast": "A few showers. Westerlies.",
+			"forecastWord": "Few showers",
+			"issuedAt": "11:30am 16 Jul",
+			"issuedAtISO": "2021-07-16T11:30:00+12:00",
+			"issuedAtRaw": 1626391800000,
+			"max": "11",
+			"min": "6",
+			"riseSet": {
+				"day": "22 July 2021",
+				"dayISO": "2021-07-22T00:00:00+12:00",
+				"firstLight": "7:35am",
+				"firstLightISO": "2021-07-22T07:35:00+12:00",
+				"id": "loc1036728",
+				"lastLight": "5:55pm",
+				"lastLightISO": "2021-07-22T17:55:00+12:00",
+				"location": "Dunedin",
+				"moonRise": "2:51pm",
+				"moonRiseISO": "2021-07-22T14:51:00+12:00",
+				"moonSet": "6:23am",
+				"moonSetISO": "2021-07-22T06:23:00+12:00",
+				"sunRise": "8:07am",
+				"sunRiseHour": 8,
+				"sunRiseISO": "2021-07-22T08:07:00+12:00",
+				"sunSet": "5:22pm",
+				"sunSetHour": 17,
+				"sunSetISO": "2021-07-22T17:22:00+12:00"
+			},
+			"source": "eWasp Urban",
+			"sourceTemps": "IPS"
+		},
+		{
+			"date": "23 Jul",
+			"dateISO": "2021-07-23T12:00:00+12:00",
+			"dow": "Friday",
+			"dowTLA": "Fri",
+			"forecast": "Fine with northwesterlies.",
+			"forecastWord": "Fine",
+			"issuedAt": "11:30am 16 Jul",
+			"issuedAtISO": "2021-07-16T11:30:00+12:00",
+			"issuedAtRaw": 1626391800000,
+			"max": "10",
+			"min": "5",
+			"riseSet": {
+				"day": "23 July 2021",
+				"dayISO": "2021-07-23T00:00:00+12:00",
+				"firstLight": "7:34am",
+				"firstLightISO": "2021-07-23T07:34:00+12:00",
+				"id": "loc1036728",
+				"lastLight": "5:56pm",
+				"lastLightISO": "2021-07-23T17:56:00+12:00",
+				"location": "Dunedin",
+				"moonRise": "3:55pm",
+				"moonRiseISO": "2021-07-23T15:55:00+12:00",
+				"moonSet": "7:31am",
+				"moonSetISO": "2021-07-23T07:31:00+12:00",
+				"sunRise": "8:06am",
+				"sunRiseHour": 8,
+				"sunRiseISO": "2021-07-23T08:06:00+12:00",
+				"sunSet": "5:23pm",
+				"sunSetHour": 17,
+				"sunSetISO": "2021-07-23T17:23:00+12:00"
+			},
+			"source": "eWasp Urban",
+			"sourceTemps": "IPS"
+		},
+		{
+			"date": "24 Jul",
+			"dateISO": "2021-07-24T12:00:00+12:00",
+			"dow": "Saturday",
+			"dowTLA": "Sat",
+			"forecast": "Fine. Northerlies.",
+			"forecastWord": "Fine",
+			"issuedAt": "11:30am 16 Jul",
+			"issuedAtISO": "2021-07-16T11:30:00+12:00",
+			"issuedAtRaw": 1626391800000,
+			"max": "11",
+			"min": "5",
+			"riseSet": {
+				"day": "24 July 2021",
+				"dayISO": "2021-07-24T00:00:00+12:00",
+				"firstLight": "7:33am",
+				"firstLightISO": "2021-07-24T07:33:00+12:00",
+				"id": "loc1036728",
+				"lastLight": "5:57pm",
+				"lastLightISO": "2021-07-24T17:57:00+12:00",
+				"location": "Dunedin",
+				"moonRise": "5:08pm",
+				"moonRiseISO": "2021-07-24T17:08:00+12:00",
+				"moonSet": "8:25am",
+				"moonSetISO": "2021-07-24T08:25:00+12:00",
+				"sunRise": "8:05am",
+				"sunRiseHour": 8,
+				"sunRiseISO": "2021-07-24T08:05:00+12:00",
+				"sunSet": "5:24pm",
+				"sunSetHour": 17,
+				"sunSetISO": "2021-07-24T17:24:00+12:00"
+			},
+			"source": "eWasp Urban",
+			"sourceTemps": "IPS"
+		},
+		{
+			"date": "25 Jul",
+			"dateISO": "2021-07-25T12:00:00+12:00",
+			"dow": "Sunday",
+			"dowTLA": "Sun",
+			"forecast": "Partly cloudy with northeasterlies.",
+			"forecastWord": "Partly cloudy",
+			"issuedAt": "11:30am 16 Jul",
+			"issuedAtISO": "2021-07-16T11:30:00+12:00",
+			"issuedAtRaw": 1626391800000,
+			"max": "12",
+			"min": "6",
+			"riseSet": {
+				"day": "25 July 2021",
+				"dayISO": "2021-07-25T00:00:00+12:00",
+				"firstLight": "7:32am",
+				"firstLightISO": "2021-07-25T07:32:00+12:00",
+				"id": "loc1036728",
+				"lastLight": "5:58pm",
+				"lastLightISO": "2021-07-25T17:58:00+12:00",
+				"location": "Dunedin",
+				"moonRise": "6:24pm",
+				"moonRiseISO": "2021-07-25T18:24:00+12:00",
+				"moonSet": "9:08am",
+				"moonSetISO": "2021-07-25T09:08:00+12:00",
+				"sunRise": "8:04am",
+				"sunRiseHour": 8,
+				"sunRiseISO": "2021-07-25T08:04:00+12:00",
+				"sunSet": "5:25pm",
+				"sunSetHour": 17,
+				"sunSetISO": "2021-07-25T17:25:00+12:00"
+			},
+			"source": "eWasp Urban",
+			"sourceTemps": "IPS"
+		}
+	],
+	"locationGFS": "93892",
+	"locationIPS": "DUNEDIN",
+	"locationWASP": "DUNEDIN",
+	"saturdayForecastWord": "Showers",
+	"sundayForecastWord": "Few showers",
+	"targeting": [
+		{
+			"key": "bravecto",
+			"location": "any",
+			"value": "true"
+		},
+		{
+			"key": "hawkesbay",
+			"value": "PARTLY CLOUDY"
+		},
+		{
+			"key": "coldsnap",
+			"value": "false"
+		},
+		{
+			"key": "pollen",
+			"value": "low"
+		},
+		{
+			"key": "apiKey",
+			"value": "dunedin"
+		},
+		{
+			"key": "type",
+			"value": "urban"
+		},
+		{
+			"key": "island",
+			"value": "towns-south-island"
+		},
+		{
+			"key": "location",
+			"value": "towns-dunedin"
+		},
+		{
+			"key": "forecast24",
+			"value": "PARTLY CLOUDY"
+		},
+		{
+			"key": "forecast48",
+			"value": "SHOWERS"
+		},
+		{
+			"key": "forecastDay1",
+			"value": "PARTLY CLOUDY"
+		},
+		{
+			"key": "forecastDay2",
+			"value": "SHOWERS"
+		},
+		{
+			"key": "forecastDay3",
+			"value": "FEW SHOWERS"
+		},
+		{
+			"key": "forecastDay4",
+			"value": "SHOWERS"
+		},
+		{
+			"key": "forecastDay5",
+			"value": "PARTLY CLOUDY"
+		},
+		{
+			"key": "minTemp24",
+			"value": "7"
+		},
+		{
+			"key": "maxTemp24",
+			"value": "13"
+		},
+		{
+			"key": "maxTemp48",
+			"value": "11"
+		},
+		{
+			"key": "satFrcst",
+			"value": "Showers"
+		},
+		{
+			"key": "sunFrcst",
+			"value": "Few showers"
+		},
+		{
+			"key": "bbqIndex",
+			"value": "1"
+		}
+	]
+}

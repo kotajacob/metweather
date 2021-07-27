@@ -22,18 +22,23 @@ func init() {
 func forecast(cmd *cobra.Command, args []string) {
 	client := metservice.NewClient()
 	ctx := context.Background()
+	forecastWeekly(client, ctx)
+}
 
+// forecastWeekly fetches and prints a forecast on one line for each day
+func forecastWeekly(client *metservice.Client, ctx context.Context) {
 	forecast, _, err := client.GetForecast(ctx, "Dunedin")
 	if err != nil {
 		fmt.Println(err)
 		return
 	}
-	fmt.Println(*forecast.LocationIPS)
 	for _, day := range forecast.Days {
-		fmt.Printf("%v\nforecast: %v\nmax: %vC\nmin: %vC\n\n",
-			*day.Date,
-			*day.ForecastWord,
-			*day.Max,
-			*day.Min)
+		fmt.Fprintf(out, "%d-%d-%d ",
+			day.Date.Local().Year(),
+			day.Date.Local().Month(),
+			day.Date.Local().Day())
+		fmt.Fprintf(out, "%s ", *day.ForecastWord)
+		fmt.Fprintf(out, "%d-", *day.Min)
+		fmt.Fprintf(out, "%dc\n", *day.Max)
 	}
 }
