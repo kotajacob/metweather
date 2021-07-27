@@ -3,34 +3,44 @@ package cmd
 import (
 	"context"
 	"fmt"
+	"log"
 
 	"git.sr.ht/~kota/metservice-go"
 	"github.com/spf13/cobra"
+	"github.com/spf13/viper"
 )
 
 // forecastCmd represents the forecast command
 var forecastCmd = &cobra.Command{
 	Use:   "forecast",
-	Short: "Displays weather predictions for the current day or next serveral days",
+	Short: "displays weather predictions for the current day or next serveral days",
 	Run:   forecast,
 }
 
 func init() {
 	rootCmd.AddCommand(forecastCmd)
+	forecastCmd.PersistentFlags().StringP("location", "l", "", "Location used for the weather forecast")
+	viper.BindPFlag("location", forecastCmd.PersistentFlags().Lookup("location"))
 }
 
 func forecast(cmd *cobra.Command, args []string) {
 	client := metservice.NewClient()
 	ctx := context.Background()
-	forecastWeekly(client, ctx)
+	location := viper.GetString("location")
+	if location == "" {
+		log.Fatal("location is required either using the flag or config")
+	}
+	err := forecastWeekly(client, ctx, location)
+	if err != nil {
+		log.Fatal(err)
+	}
 }
 
 // forecastWeekly fetches and prints a forecast on one line for each day
-func forecastWeekly(client *metservice.Client, ctx context.Context) {
-	forecast, _, err := client.GetForecast(ctx, "Dunedin")
+func forecastWeekly(client *metservice.Client, ctx context.Context, location string) error {
+	forecast, _, err := client.GetForecast(ctx, location)
 	if err != nil {
-		fmt.Println(err)
-		return
+		return fmt.Errorf("getting forecast: %v", err)
 	}
 	for _, day := range forecast.Days {
 		fmt.Fprintf(out, "%d-%d-%d ",
@@ -41,4 +51,5 @@ func forecastWeekly(client *metservice.Client, ctx context.Context) {
 		fmt.Fprintf(out, "%d-", *day.Min)
 		fmt.Fprintf(out, "%dc\n", *day.Max)
 	}
+	return nil
 }

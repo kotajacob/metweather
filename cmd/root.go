@@ -1,27 +1,72 @@
 package cmd
 
 import (
-	"fmt"
 	"io"
+	"log"
 	"os"
 
+	homedir "github.com/mitchellh/go-homedir"
 	"github.com/spf13/cobra"
+	"github.com/spf13/viper"
 )
 
-// modified during testing
-var out io.Writer = os.Stdout
+var cfgFile string
+
+var out io.Writer = os.Stdout // modified during testing
 
 // rootCmd represents the base command when called without any subcommands
 var rootCmd = &cobra.Command{
-	Use:   "metweather",
-	Short: "Print weather information from Metservice.",
+	Use:     "metweather",
+	Short:   "Print weather information from Metservice.",
+	Version: "0.1.0",
 }
 
-// Execute adds all child commands to the root command and sets flags appropriately.
-// This is called by main.main(). It only needs to happen once to the rootCmd.
+func init() {
+	cobra.OnInitialize(initConfig)
+	rootCmd.PersistentFlags().StringVar(&cfgFile, "config", "", "config file (default is $HOME/.metweather.yaml)")
+	log.SetPrefix("metweather error: ")
+	log.SetFlags(0)
+}
+
+// initConfig reads in config file and ENV variables if set.
+func initConfig() {
+	if cfgFile != "" {
+		// Use config file from the flag.
+		viper.SetConfigFile(cfgFile)
+	} else {
+		// Find home directory.
+		home, err := homedir.Dir()
+		if err != nil {
+			log.Fatal(err)
+			os.Exit(1)
+		}
+
+		// Search config in home directory with name ".metweather" (without extension).
+		viper.AddConfigPath(home)
+		viper.SetConfigName(".metweather")
+	}
+
+	// The location flag would be METWEATHER_LOCATION
+	viper.SetEnvPrefix("metweather")
+	viper.AutomaticEnv()
+
+	// If a config file is found, read it in.
+	err := viper.ReadInConfig()
+	if err != nil {
+		// Ignore file not found error.
+		if _, ok := err.(viper.ConfigFileNotFoundError); !ok {
+			log.Fatal(err)
+			os.Exit(1)
+		}
+	}
+}
+
+// Execute adds all child commands to the root command and sets flags
+// appropriately. This is called by main.main(). It only needs to happen once
+// to the rootCmd.
 func Execute() {
 	if err := rootCmd.Execute(); err != nil {
-		fmt.Println(err)
+		log.Fatal(err)
 		os.Exit(1)
 	}
 }
