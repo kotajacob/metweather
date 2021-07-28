@@ -1,0 +1,9 @@
+image: ubuntu/lts
+packages:
+  - golang
+sources:
+  - https://git.sr.ht/~kota/metweather
+tasks:
+  - test: |
+      cd metweather
+      go test
