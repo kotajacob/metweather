@@ -1,6 +1,7 @@
 # metweather [![builds.sr.ht status](https://builds.sr.ht/~kota/metweather.svg)](https://builds.sr.ht/~kota/metweather)
 
-Display weather information from [Metservice](https://www.metservice.com/).
+Display weather information from [Metservice](https://www.metservice.com/). Uses
+the [metservice-go](https://git.sr.ht/~kota/metservice-go) library.
 
 # Usage
 
