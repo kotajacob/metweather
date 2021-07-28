@@ -23,6 +23,7 @@ func init() {
 	viper.BindPFlag("location", forecastCmd.PersistentFlags().Lookup("location"))
 }
 
+// forecast fetches and prints a forecast based on options provided
 func forecast(cmd *cobra.Command, args []string) {
 	client := metservice.NewClient()
 	ctx := context.Background()
@@ -36,20 +37,21 @@ func forecast(cmd *cobra.Command, args []string) {
 	}
 }
 
-// forecastWeekly fetches and prints a forecast on one line for each day
+// forecastWeekly fetches and prints a forecast on one line for each day using
+// a provided client, context, and location
 func forecastWeekly(client *metservice.Client, ctx context.Context, location string) error {
-	forecast, _, err := client.GetForecast(ctx, location)
+	f, _, err := client.GetForecast(ctx, location)
 	if err != nil {
 		return fmt.Errorf("getting forecast: %v", err)
 	}
-	for _, day := range forecast.Days {
+	for _, day := range f.Days {
 		fmt.Fprintf(out, "%d-%d-%d ",
 			day.Date.Local().Year(),
 			day.Date.Local().Month(),
 			day.Date.Local().Day())
 		fmt.Fprintf(out, "%s ", *day.ForecastWord)
 		fmt.Fprintf(out, "%d-", *day.Min)
-		fmt.Fprintf(out, "%dc\n", *day.Max)
+		fmt.Fprintf(out, "%d°C\n", *day.Max)
 	}
 	return nil
 }
