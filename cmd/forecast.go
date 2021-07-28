@@ -19,7 +19,7 @@ var forecastCmd = &cobra.Command{
 
 func init() {
 	rootCmd.AddCommand(forecastCmd)
-	forecastCmd.PersistentFlags().StringP("location", "l", "", "Location used for the weather forecast")
+	forecastCmd.PersistentFlags().StringP("location", "l", "", "location used for the weather forecast")
 	viper.BindPFlag("location", forecastCmd.PersistentFlags().Lookup("location"))
 }
 
