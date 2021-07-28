@@ -4,7 +4,9 @@ import (
 	"io"
 	"log"
 	"os"
+	"path"
 
+	"github.com/adrg/xdg"
 	homedir "github.com/mitchellh/go-homedir"
 	"github.com/spf13/cobra"
 	"github.com/spf13/viper"
@@ -23,7 +25,7 @@ var rootCmd = &cobra.Command{
 
 func init() {
 	cobra.OnInitialize(initConfig)
-	rootCmd.PersistentFlags().StringVar(&cfgFile, "config", "", "config file (default is $HOME/.metweather.yaml)")
+	rootCmd.PersistentFlags().StringVar(&cfgFile, "config", "", "config file (default is $XDG_CONFIG/.metweather.yaml)")
 	log.SetPrefix("metweather error: ")
 	log.SetFlags(0)
 }
@@ -41,8 +43,11 @@ func initConfig() {
 			os.Exit(1)
 		}
 
-		// Search config in home directory with name ".metweather" (without extension).
-		viper.AddConfigPath(home)
+		// Search config in XDG_CONFIG directories with name ".metweather"
+		// (without extension).
+		viper.AddConfigPath("/etc/metweather/")
+		viper.AddConfigPath(xdg.ConfigHome)
+		viper.AddConfigPath(path.Join(home, ".config"))
 		viper.SetConfigName(".metweather")
 	}
 
