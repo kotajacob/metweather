@@ -13,8 +13,9 @@ GLOBAL flags
   -v, --version           version for metweather
   -l, --location string   location used for the weather observation/forecast
 
-observation: display current or past weather observations
-forecast: display weather predictions for the current day or next serveral days
+COMMANDS
+  observation: display current or past weather observations
+  forecast: display weather predictions for the current day or next serveral days
 ```
 
 # Config Example
