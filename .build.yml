@@ -5,5 +5,5 @@ sources:
   - https://git.sr.ht/~kota/metweather
 tasks:
   - test: |
-      cd metweather
+      cd metweather/cmd
       go test
