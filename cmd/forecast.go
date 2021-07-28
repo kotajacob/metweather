@@ -13,7 +13,7 @@ import (
 // forecastCmd represents the forecast command
 var forecastCmd = &cobra.Command{
 	Use:   "forecast",
-	Short: "displays weather predictions for the current day or next serveral days",
+	Short: "display weather predictions for the current day or next serveral days",
 	Run:   forecast,
 }
 
