@@ -28,6 +28,19 @@ location: Dunedin
 alternatively you can set an environment variable
 `METWEATHER_LOCATION="Dunedin"`
 
+# Installation
+
+Install the dependencies:
+
+- go (>=1.13)
+- scdoc
+
+Edit config.mk to your desired install path.
+
+Then compile and install:
+
+    # sudo make install
+
 # Resources
 
 Discussion and patches can be found [here](https://lists.sr.ht/~kota/public-inbox).
