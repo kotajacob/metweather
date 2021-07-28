@@ -61,7 +61,7 @@ func observationThreeHour(client *metservice.Client, ctx context.Context, locati
 // higher than the measured air temp. For values between 10-14°C a pragmatic
 // linear roll-off of the wind chill is used. So 12°C at 5km/h wind has a
 // windChill of 12°C.
-// NOTE: The windChill formula listen on the Metservice website is incorrect.
+// NOTE: The windChill formula listed on the Metservice website is incorrect.
 func feelsLike(temp int, humidity int, speed int) float64 {
 	// return whichever is higher of apparentTemp and temp
 	if temp >= 14 {
