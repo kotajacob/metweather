@@ -20,7 +20,7 @@ var out io.Writer = os.Stdout // modified during testing
 var rootCmd = &cobra.Command{
 	Use:     "metweather",
 	Short:   "Print weather information from Metservice.",
-	Version: "0.1.0",
+	Version: "0.3.0",
 }
 
 func init() {
