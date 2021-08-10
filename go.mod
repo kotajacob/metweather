@@ -3,7 +3,7 @@ module git.sr.ht/~kota/metweather
 go 1.16
 
 require (
-	git.sr.ht/~kota/metservice-go v1.1.0
+	git.sr.ht/~kota/metservice-go v1.1.2
 	github.com/adrg/xdg v0.3.3
 	github.com/mitchellh/go-homedir v1.1.0
 	github.com/spf13/cast v1.4.0 // indirect
